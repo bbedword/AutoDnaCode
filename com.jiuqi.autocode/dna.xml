@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dna>
+	<publish>
+		<services>
+			<!-- service space="dna/core" class="com.jiuqi.dna.core.XXService" -->
+		</services>
+		<orms>
+			<!-- orm space="dna/core" class="com.jiuqi.dna.core.XXORM" -->
+		</orms>
+		<commands>
+			<!-- command space="dna/core" class="com.jiuqi.dna.core.XXCommand" -->
+		</commands>
+		<querys>
+			<!-- query space="dna/core" class="com.jiuqi.dna.core.XXQuery" -->
+		</querys>
+		<tables>
+			<!--table space="dna/core" class="com.jiuqi.dna.core.impl.TD_BundleBin" /-->
+			<table space="jiuqi/autocode" class="com.jiuqi.autocode.TB_EMGR_SIGNAL"/>
+			<table space="lcjr/table" class="com.jiuqi.autocode.TB_LCJR_FILE1"/>
+		</tables>
+		<ui-entrys>
+			<uientry class="com.jiuqi.autocode.AutoCodeUIEntry" name="autocode"/>
+		</ui-entrys>
+		<pages>
+			<page space="jiuqi/autocode" name="ProjectInfoConfigPage" class="com.jiuqi.autocode.ProjectInfoConfigPage"/>
+		</pages>
+		<ui-stylesheets>
+			<!-- stylesheet name="stylesheet" title="stylesheet" path="com/jiuqi/dna/ui/demo/stylesheet.css" -->
+		</ui-stylesheets>
+		<portlets>
+			<!-- portlet name="portlet" class="com.jiuqi.dna.ui.XXPortlet" -->
+		</portlets>
+	</publish>
+	<servlets>
+		<servlet space="jiuqi/emgr/main" path="/autocode/*" class="com.jiuqi.dna.ui.launch.http.SystemEntryServlet"/>
+	</servlets>
+</dna>
